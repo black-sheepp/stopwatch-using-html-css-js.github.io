@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+:root{
+    /* --primary-color: rgb(148, 226, 203); */
+    --primary-color: rgb(226, 148, 187);
+    /* --secondary-color: rgb(249, 254, 253); */
+    --secondary-color: rgb(249, 254, 253);
+}
+
+.format{
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+h1{
+    color: var(--secondary-color);
+    font-size: 90px;
+    font-weight: bold;
+    font-family:monospace;
+    padding: 40px;
+}
+
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1{
+    display: flex;
+}
+
+.container1 .number{
+    font-size: 200px;
+    font-weight: 400;
+    margin: 0 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 15px 0px var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container1 .number span{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.container2{
+    margin: 20px;
+    align-items: center;
+
+}
+
+.container2 button{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin: 0px 10px;
+    width: 200px;
+    box-shadow: 0px 0px 10px 0px var(--secondary-color);
+}
+
+.container2 button:hover{
+    background-color: black;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px var(--primary-color);
+}
+
+@media (max-width: 1400px){
+    .container1 .number{
+        font-size: 100px;
+        margin: 0 7px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .container1 .number span{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 70px;
+        padding: 30px;
+    }
+    .format{
+        font-size: 30px;
+    }
+}
+@media (max-width: 850px){
+    .container1 .number{
+        font-size: 50px;
+        margin: 0 5px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 50px;
+        padding: 20px;
+    }
+    .format{
+        font-size: 20px;
+    }
+    .container2 button{
+        font-size: 15px;
+        width: 80px;
+    }
+}
+@media (max-width: 710px){
+    .container1 .number{
+        font-size: 30px;
+        margin: 0 3px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .container2 button{
+        font-size: 10px;
+        width: 70px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .format{
+        font-size: 15px;
+    }
+}
+@media (max-width: 450px){
+    body{
+        flex-direction: column-reverse;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 .number{
+        font-size: 20px;
+        margin: 0 3px;
+        padding: 7px;
+        border-radius: 6px;
+    }
+    .container2 button{
+        font-size: 10px;
+        width: 70px;
+    }
+    h1{
+        font-size: 20px;
+        padding: 7px;
+    }
+    .format{
+        font-size: 10px;
+    }
+}
+@media (max-width: 250px){
+    body{
+        flex-direction: column-reverse;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 .number{
+        font-size: 18px;
+        margin: 0 2px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .container2 button{
+        font-size: 7px;
+        width: 50px;
+    }
+    h1{
+        font-size: 15px;
+        padding: 7px;
+    }
+    .format{
+        font-size: 8px;
+    }
+}
+
